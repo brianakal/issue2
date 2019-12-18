@@ -27,6 +27,7 @@
           <router-link to="/latihan2" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Latihan 2</router-link>
           <router-link to="/inputLog" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Input Log</router-link>
           <router-link to="/inputPengumuman" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Kirim Pengumuman</router-link>
+          <router-link to="/terimaPengumuman" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Terima Pengumuman</router-link>
           <router-link to="/cobaTailwind" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Coba Tailwind</router-link>
         </div>
       </div>

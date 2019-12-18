@@ -20,7 +20,7 @@ app.use(cors())
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/logs', usersRouter);
-app.use('/pengumuman', usersRouter);
+app.use('/logs', logsRouter);
+app.use('/pengumuman', pengumumanRouter);
 
 module.exports = app;
