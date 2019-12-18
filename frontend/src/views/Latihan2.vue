@@ -39,21 +39,6 @@
               <button  class="shadow bg-green-500 hover:bg-green-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">Public Message</button>
             </div>
           </div>
-
-<!-- 
-
-          <p>
-            Me <input type="text" v-model="me" required/>
-          </p>
-          <p>
-            To <input type="text" v-model="to" required/> 
-            <button type="button" @click="privateMessage">Private Message</button>
-          </p>
-          <p>
-            Message <input type="text" v-model="message" required />
-          </p>
-
-          <button type="submit">Public Message</button> -->
         </form>
 
         <p>

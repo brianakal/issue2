@@ -50,18 +50,6 @@
             </button>
           </div>
         </div>
-        <!-- <h1>Send Notification</h1>
-        <p>
-          Me <input type="text" v-model="me" />
-        </p>
-        <p>
-          To <input type="text" v-model="to" />
-        </p>
-        <p>
-          Message <input type="text" v-model="message" />
-        </p>
-        <button @click="sendMessage">Send Message</button>
-       -->
         <p>
           <ul>
             <li v-for="(msg, i) in incomingMessages" :key="i">
