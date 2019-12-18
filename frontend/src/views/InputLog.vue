@@ -1,20 +1,35 @@
 <template>
-  <div class="about">
-    <h1>This is an log page</h1>
-    <div class="flex justify-between">
+  <div class="w-full max-w-xs mx-auto">
+    <div class="bg-blue-100 border-t border-b border-blue-500 text-blue-700 px-4 py-3" role="alert">
+      <p class="font-bold">This is an input log page</p>
+      <p class="text-sm">Send Notification</p>
+    </div>
+    <div>
       <div>
-        <h1>Send Notification</h1>
-        <form method="POST" @submit.prevent="sendMessage">
-        <p>
-          From <input type="text" v-model="from" required/>
-        </p>
-        <p>
-          To <input type="text" v-model="to" required/>
-        </p>
-        <p>
-          Message <input type="text" v-model="message" required/>
-        </p>
-        <button type="submit">Send Message</button>
+        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4" method="POST" @submit.prevent="sendMessage">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="from">
+          From 
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" v-model="from" required/>
+        </div>
+
+        <div  class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="to">
+          To 
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" v-model="to" required/>
+        </div>
+
+        <div  class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="to">
+          Message 
+          </label>
+          <input  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" v-model="message" required/>
+        </div>
+        <div class="mb-4">
+          <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">Send Message</button>
+        </div>
         </form>
         <p>
           <ul>
@@ -58,14 +73,9 @@ export default {
 
       this.connection.send(data)
 
-      // const formData = new FormData()
-
-      // const response = await axios.post('logs/addLog/', formData)
-
-
     },
 
-    async addLog() {
+    /* async addLog() {
       const formData = new FormData()
 
       const response = await axios.post('logs/addLog/', formData)
@@ -76,7 +86,7 @@ export default {
 
       // this.newTask = ''
       // this.getList()
-    },
+    }, */
 
     registerWS() {
       const url = 'ws://localhost:8000'
