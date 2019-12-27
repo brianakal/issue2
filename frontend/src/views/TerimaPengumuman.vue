@@ -84,12 +84,8 @@ export default {
 
   async mounted() {
     this.registerWS()
-
-
     const response = await axios.get('pengumuman/hitungNotifikasi')
-
     this.jumlah_notifikasi = response.data.count
-
   },
 
   methods: {
